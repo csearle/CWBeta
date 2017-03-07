@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cannawellness.chris.cwbeta">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+        <activity android:name=".Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Modality" />
+        <activity android:name=".Smoke" />
+        <activity android:name=".Oil" />
+        <activity android:name=".StrainSelection" />
+        <activity android:name=".StrainChooser" />
+        <activity android:name=".NumberPickerDialog" />
+        <activity android:name=".MainActivity" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Partial" />
+        <activity android:name=".OilPotency" />
+        <activity android:name=".Vape" />
+        <activity android:name=".Effects" />
+        <activity android:name=".VapeWeight" />
+        <activity android:name=".Questionaire" />
+        <activity
+            android:name=".Questionaire2"
+            android:label="@string/title_activity_questionaire2" />
+        <activity
+            android:name=".Questionaire3"
+            android:label="@string/title_activity_questionaire3" />
+        <activity
+            android:name=".Questionaire5"
+            android:label="@string/title_activity_questionaire5"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="#F5F5DC"
+    android:weightSum="1">
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Inhalations"
+            android:textColor="@drawable/rbtn_textcolor_selector" />
+
+        <RadioButton
+            android:id="@+id/radioiPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rbtn_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Bowls"
+            android:textColor="@drawable/rbtn_textcolor_selector" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.54">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginTop="30dp"
+            android:text="Select Number of Inhalations:"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            android:id="@+id/textView5" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.Picker"
+            android:layout_marginTop="50dp"
+            android:id="@+id/numberPickerPartial"
+            android:layout_gravity="center" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp">
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/button2"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_toLeftOf="@+id/numberPicker1"
+                android:text="Next"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numberPicker1"
+                android:layout_marginTop="98dp"
+                android:layout_toRightOf="@+id/numberPicker1"
+                android:text="Cancel"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

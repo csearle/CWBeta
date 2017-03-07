@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cannawellness.chris.cwbeta.Questionaire2"
+    android:background="#f3ffcc"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editQ4"
+        android:id="@+id/Q2Q1"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Alcohol Consumption: How many beverages do you consume in an average week?"
+            android:textSize="22sp"
+            android:id="@+id/txtQ1"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            style="@android:style/Widget.Holo.Spinner"
+            android:id="@+id/spinner2"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/txtQ1"
+            android:layout_toEndOf="@+id/txtQ1"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_marginBottom="2dp">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editQ4"
+        android:id="@+id/Q2Q2"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="How many packs of cigarettes/cigars do you consume in an average week?"
+            android:textSize="22sp"
+            android:id="@+id/textView8"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <Spinner
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            style="@android:style/Widget.Holo.Spinner"
+            android:id="@+id/spinner"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:spinnerMode="dropdown"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_marginBottom="2dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Are you employed? If so, what is your occupation?"
+            android:textSize="22sp"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_pirates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Yes"
+                android:onClick="onRadioButtonClicked"
+                android:checked="true"/>
+            <RadioButton android:id="@+id/radio_ninjas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@android:color/black"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"
+        android:layout_marginBottom="2dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:text="Do you serve in the military or as a first responder?"/>
+
+        <Button
+            android:layout_width="124dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="10dp"
+            android:text="placeholder"
+            android:textColor="@android:color/black"
+            android:background="@drawable/roundedbuttongrey"
+            android:id="@+id/dateButton" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/nextButton"
+        android:layout_gravity="right"
+        android:textColor="@android:color/black"
+        android:background="@drawable/roundedbuttongrey"/>
+
+</LinearLayout>
